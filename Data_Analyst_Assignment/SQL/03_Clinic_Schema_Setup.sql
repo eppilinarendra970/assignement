@@ -1,4 +1,3 @@
--- Clinic Management System Schema Setup
 
 CREATE TABLE clinics (
     cid VARCHAR(50) PRIMARY KEY,
@@ -34,7 +33,6 @@ CREATE TABLE expenses (
     FOREIGN KEY (cid) REFERENCES clinics(cid)
 );
 
--- Sample INSERT Data
 INSERT INTO clinics (cid, clinic_name, city, state, country) 
 VALUES 
 ('C001', 'HealthCare Plus', 'Mumbai', 'Maharashtra', 'India'),
@@ -81,3 +79,4 @@ VALUES
 ('E008', 'C004', 'Staff Salary', 55000.00, '2021-11-15 12:00:00'),
 ('E009', 'C005', 'Utilities', 10000.00, '2021-11-20 09:30:00'),
 ('E010', 'C005', 'Medical Supplies', 16000.00, '2021-11-18 11:00:00');
+
