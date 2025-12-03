@@ -1,4 +1,4 @@
--- Hotel Management System Schema Setup
+
 
 CREATE TABLE users (
     user_id VARCHAR(50) PRIMARY KEY,
@@ -33,7 +33,6 @@ CREATE TABLE booking_commercials (
     FOREIGN KEY (item_id) REFERENCES items(item_id)
 );
 
--- Sample INSERT statements
 INSERT INTO users (user_id, name, phone_number, mail_id, billing_address) 
 VALUES 
 ('U001', 'John Doe', '9876543210', 'john@email.com', '123 Main Street'),
@@ -58,3 +57,4 @@ VALUES
 ('BC002', 'B001', 'BILL001', '2021-10-16 19:00:00', 'I002', 1),
 ('BC003', 'B002', 'BILL002', '2021-11-20 12:00:00', 'I001', 3),
 ('BC004', 'B003', 'BILL003', '2021-10-23 10:00:00', 'I003', 2);
+
