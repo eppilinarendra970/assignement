@@ -1,6 +1,4 @@
--- Hotel Management System - Query Solutions
-
--- Query 1: Last booked room per user
+--Query 1:
 SELECT 
     u.user_id,
     u.name,
@@ -91,3 +89,4 @@ SELECT
 FROM monthly_bills
 WHERE rank = 2
 ORDER BY year, month;
+
